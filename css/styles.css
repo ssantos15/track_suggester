@@ -5,3 +5,35 @@
 .introSubheading {
   font-family: fantasy;
 }
+
+#cSharp {
+  display:none;
+}
+
+.wrapAroundLeft {
+  float:left;
+}
+
+.wide {
+  width:50%;
+}
+
+.seperationFromTop {
+  margin-top: 20px;
+}
+
+.seperationFromHeading {
+  margin-top: 100px;
+}
+
+#java {
+  display: none;
+}
+
+#php {
+  display: none;
+}
+
+#ruby {
+  display: none;
+}
