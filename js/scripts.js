@@ -1,13 +1,22 @@
 $(document).ready(function() {
   ("form#track-suggester").submit(function(event) {
+    debugger;
     event.preventDefault();
 
-    var iwebOrSoftware = ()
+    var iwebOrSoftware = $("input#webOrSoftware").val();
+
+    var ibigOrSmall = $("input#bigOrSmall").val();
+
+    var imobileOrInternal = $("input#mobileOrInternal").val();
+
+    var ibackendOrFrontend = $("input#backendOrFrontend").val();
+
+    var isecurity = $("input#security").val();
 
 
-    if(webOrSoftware === "yes")
+    if(iwebOrSoftware === "yes")
     {
-      if(backendOrFrontend ==="yes")
+      if(ibackendOrFrontend ==="yes")
         {
           ("#ruby").show();
         }
@@ -19,9 +28,9 @@ $(document).ready(function() {
 
     else
     {
-      if(bigOrSmall === "yes")
+      if(ibigOrSmall === "yes")
       {
-        if(mobileOrInternal === "yes")
+        if(imobileOrInternal === "yes")
         {
           ("#java").show();
         }
@@ -32,7 +41,7 @@ $(document).ready(function() {
       }
       else
       {
-        ("cSharp").show();
+        ("#cSharp").show();
       }
     }
 
