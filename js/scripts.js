@@ -1,28 +1,29 @@
 $(document).ready(function() {
-  ("form#track-suggester").submit(function(event) {
-    debugger;
+  $("form#track-suggester").submit(function(event) {
     event.preventDefault();
 
+    console.log();
+    debugger;
     var iwebOrSoftware = $("input#webOrSoftware").val();
-
     var ibigOrSmall = $("input#bigOrSmall").val();
-
     var imobileOrInternal = $("input#mobileOrInternal").val();
-
-    var ibackendOrFrontend = $("input#backendOrFrontend").val();
-
+    var ifrontendOrBackend = $("input#frontendOrBackend").val();
     var isecurity = $("input#security").val();
 
+    var iname = $("input#name").val();
+    $(".name").text(iname);
 
     if(iwebOrSoftware === "yes")
     {
-      if(ibackendOrFrontend ==="yes")
+      if(ifrontendOrBackend ==="yes")
         {
-          ("#ruby").show();
+          $("#ruby").show();
+          $("#introHide").hide();
         }
       else
         {
-          ("#php").show();
+          $("#php").show();
+          $("#introHide").hide();
         }
     }
 
@@ -32,16 +33,19 @@ $(document).ready(function() {
       {
         if(imobileOrInternal === "yes")
         {
-          ("#java").show();
+          $("#java").show();
+          $("#introHide").hide();
         }
         else
         {
-          ("#cSharp").show();
+          $("#cSharp").show();
+          $("#introHide").hide();
         }
       }
       else
       {
-        ("#cSharp").show();
+        $("#java").show();
+        $("#introHide").hide();
       }
     }
 

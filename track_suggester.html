@@ -4,73 +4,75 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src ="js/jquery-3.3.1.js"></script>
-    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Track Suggester</title>
   </head>
   <body>
     <div class="container">
-      <div class ="jumbotron">
-        <div class="intro">
-          <h1>Track Suggester</h1>
-          <h3><span class="introSubheading">What programming language should I learn?</span></h3>
-        </div>
-      </div>
-      <div>
-        <h4>Please answer the questions below, with yes or no, and based on the answer we will suggest which track is best suited for you!</h4>
-        <form id="track-suggester">
-          <div class="form-group">
-            <label for="webOrSoftware">Do you prefer web development over software development?</label>
-            <select class="form-control" id="webOrSoftware">
-              <option>Yes</option>
-              <option>No</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="bigOrSmall">Do you feel more comfortable working in a bigger tech company like Microsoft, Amazon, or Netflix rather then a startup?</label>
-            <select class="form-control" id="bigOrSmall">
-              <option>Yes</option>
-              <option>No</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="mobileOrInternal">Does android development interest you more then developing internal software?</label>
-            <select id="mobileOrInternal" class="form-control">
-              <option>Yes</option>
-              <option>No</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for ="backendOrFrontend">Would you rather develop the front end of a website by making it interactive over working with back end?</label>
-            <select id="backendOrFrontend" class="form-control">
-              <option>Yes</option>
-              <option>No</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="security">Does maintaining the security and stability of a huge complex of government website interest you?</label>
-            <select id="security" class="form-control">
-              <option>Yes</option>
-              <option>No</option>
-            </select>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        <form>
-      </div>
-
-
-      <div id="cSharp">
-        <div class="jumbotron">
+      <div id="introHide">
+        <div class ="jumbotron">
           <div class="intro">
-            <h1>C#</h1>
-            <div class="introSubheading">
-              <h3>You ought to study C#, so you can learn how to make internal software for established companies!</h3>
+            <h1>Track Suggester</h1>
+            <h3><span class="introSubheading">What programming language should I learn?</span></h3>
+          </div>
+        </div>
+        <div>
+          <h4>Please answer the questions below, with yes or no, and based on the answer we will suggest which track is best suited for you!</h4>
+          <form id="track-suggester">
+            <div class="form-group">
+              <label for="webOrSoftware">Do you prefer web development over software development?</label>
+              <select class="form-control" id="webOrSoftware">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="bigOrSmall">Do you feel more comfortable working in a bigger tech company like Microsoft, Amazon, or Netflix rather then a startup?</label>
+              <select class="form-control" id="bigOrSmall">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mobileOrInternal">Does android development interest you more then developing internal software?</label>
+              <select id="mobileOrInternal" class="form-control">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for ="frontendOrBackend">Would you rather develop the front end of a website by making it interactive over working with back end?</label>
+              <select id="frontendOrBackend" class="form-control">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="security">Does maintaining the security and stability of a huge complex of government website interest you?</label>
+              <select id="security" class="form-control">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+
+        <div id="cSharp">
+          <div class="jumbotron">
+            <div class="intro">
+              <h1>C#</h1>
+              <div class="introSubheading">
+                <h3>You ought to study C#, so you can learn how to make internal software for established companies!</h3>
+              </div>
             </div>
           </div>
-        </div>
-        <h3 class="seperationFromHeading">A little information about C#:</h3>
-        <div class="seperationFromTop">
-          <img class ="wrapAroundLeft" src="img/csharp.jpg" alt="An image of C# logo." style="width:350px;height:200px;">
-          <p class="wide">C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
+          <h3 class="seperationFromHeading">A little information about C#:</h3>
+          <div class="seperationFromTop">
+            <img class ="wrapAroundLeft" src="img/csharp.jpg" alt="An image of C# logo." style="width:350px;height:200px;">
+            <p class="wide">C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
+          </div>
         </div>
       </div>
 
