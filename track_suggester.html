@@ -9,46 +9,51 @@
   </head>
   <body>
     <div class="container">
-      <div class ="jumbotron">
-        <div class="intro">
-          <h1>Track Suggester</h1>
-          <h3><span class="introSubheading">What programming language should I learn?</span></h3>
+      <div id="introHide">
+        <div class ="jumbotron">
+          <div class="intro">
+            <h1>Track Suggester</h1>
+            <h3><span class="introSubheading">What programming language should I learn?</span></h3>
+          </div>
+        </div>
+        <div>
+          <h4>Please answer the questions below, with yes or no, and based on the answer we will suggest which track is best suited for you!</h4>
+          <form id="track-suggester">
+            <div class="form-group">
+              <label for="name">Hello, please type in your name.</label>
+              <input id="name" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="webOrSoftware">Do you prefer web development over software development?</label>
+              <input id="webOrSoftware" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="bigOrSmall">Do you feel more comfortable working in a bigger tech company like Microsoft, Amazon, or Netflix rather then a startup?</label>
+              <input id="bigOrSmall" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="mobileOrInternal">Does android development interest you more then developing internal software?</label>
+              <input id="mobileOrInternal" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for ="frontendOrBackend">Would you rather develop the front end of a website by making it interactive over working with back end?</label>
+              <input id="frontendOrBackend" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="security">Does maintaining the security and stability of a huge complex of government website interest you?</label>
+              <input id="security" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
       </div>
-      <div>
-        <h4>Please answer the questions below, with yes or no, and based on the answer we will suggest which track is best suited for you!</h4>
-        <form id="track-suggester">
-          <div class="form-group">
-            <label for="webOrSoftware">Do you prefer web development over software development?</label>
-            <input id="webOrSoftware" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="bigOrSmall">Do you feel more comfortable working in a bigger tech company like Microsoft, Amazon, or Netflix rather then a startup?</label>
-            <input id="bigOrSmall" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="mobileOrInternal">Does android development interest you more then developing internal software?</label>
-            <input id="mobileOrInternal" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for ="backendOrFrontend">Would you rather develop the front end of a website by making it interactive over working with back end?</label>
-            <input id="backendOrFrontend" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="security">Does maintaining the security and stability of a huge complex of government website interest you?</label>
-            <input id="security" class="form-control" type="text">
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
-
 
       <div id="cSharp">
         <div class="jumbotron">
           <div class="intro">
             <h1>C#</h1>
             <div class="introSubheading">
-              <h3>You ought to study C#, so you can learn how to make internal software for established companies!</h3>
+              <h3>Hello <span class="name"></span>, you ought to study C#, so you can learn how to make internal software for established companies!</h3>
             </div>
           </div>
         </div>
@@ -65,7 +70,7 @@
           <div class="intro">
             <h1>Java</h1>
             <div class="introSubheading">
-              <h3>You ought to study Java, so you can choose whether to go into android or work with high performance applications in the future!</h3>
+              <h3>Hello <span class="name"></span>, you ought to study Java, so you can choose whether to go into android or work with high performance applications in the future!</h3>
             </div>
           </div>
         </div>
@@ -82,7 +87,7 @@
           <div class="intro">
             <h1>PHP</h1>
             <div class="introSubheading">
-              <h3>You ought to study PHP, so you can learn the back-end of web devolopment!</h3>
+              <h3>Hello <span class="name"></span>, you ought to study PHP, so you can learn the back-end of web devolopment!</h3>
             </div>
           </div>
         </div>
@@ -99,7 +104,7 @@
           <div class="intro">
             <h1>Ruby</h1>
             <div class="introSubheading">
-              <h3>You ought to study Ruby, so you can learn how to make an interactive web application!</h3>
+              <h3>Hello <span class="name"></span>, you ought to study Ruby, so you can learn how to make an interactive web application!</h3>
             </div>
           </div>
         </div>
@@ -109,8 +114,7 @@
           <p class="wide">Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.Though each language has its niche, there is plenty of crossover. For example, Rails' popularity inspired copycats in just about every language, and so you'll see interactive web applications written in C#, Java, and PHP, with Rails-like frameworks including .NET MVC, Spring, and Laravel. Even at one company, you might find them using PHP for their marketing site, Ruby for their web application, and Java for their back-end processing.</p>
         </div>
       </div>
-
-
+      
     </div>
   </body>
 </html>
