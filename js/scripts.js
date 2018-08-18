@@ -1,7 +1,7 @@
 $(document).ready(function() {
   ("form#track-suggester").submit(function(event) {
     event.preventDefault();
-    console.log("script");
+    console.log();
     debugger;
     var iwebOrSoftware = $("input#webOrSoftware").val();
 
@@ -41,7 +41,7 @@ $(document).ready(function() {
       }
       else
       {
-        ("cSharp").show();
+        ("#cSharp").show();
       }
     }
 
